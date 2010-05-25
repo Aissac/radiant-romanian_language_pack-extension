@@ -1,108 +1,108 @@
 ---
 ro: 
-  account: 'Account'
+  account: 'Cont' # account
   activerecord:
     errors:
       messages:
-        blank: 'required' # required
-        invalid: 'invalid format' #invalid_format
-        not_a_number: 'must be a number' # must be number
-        taken: 'name already in use' # name_in_use
-        too_long: '{{count}}-character limit' # character_limit
-        too_short: '{{count}}-character minimum' # character_minimum
+        blank: 'obligatoriu' # required
+        invalid: 'format invalid' #invalid format
+        not_a_number: 'trebuie sa fie numar' # must be number
+        taken: 'name already in use' # name already in use
+        too_long: 'limita de caractere: {{count}}' # {{count}}-character limit
+        too_short: 'numar minim de caractere: {{count}}' # {{count}}-character minimum
       models:
         page:
           attributes:
             slug:
-              taken: 'slug already in use for child of parent' # slug_in_use
+              taken: 'slug already in use for child of parent'
         user:
           attributes:
             email:
-              invalid: 'invalid e-mail address' # invalid_email
+              invalid: 'adresa de email invalida' # invalid e-mail address
             login:
-              taken: 'login already in use' # login already in use
+              taken: 'login already in use'
             password:
-              confirmation: 'must match confirmation' # password_confirmation
+              confirmation: 'parolele trebuie sa coincida' # must match confirmation
   add_child: 'Add Child'
   add_part: 'Add Part'
   add_tab: 'Add Tab'
-  admin: 'Administrator' 
+  admin: 'Administrator' # Administrator 
   available_tags: 'Available Tags'
   available_tags_for: 'Available Tags for {{name}}'
   body: 'Body'  
   breadcrumb: 'Breadcrumb'
   buttons:
-    create: 'Create {{name}}'   
+    create: 'Create {{name}}'
     save_and_continue: 'Save and Continue Editing'
-    save_changes: 'Save Changes'  
-  cancel: 'Cancel'
-  change: 'Change'
-  close: 'Close'
-  content: 'Content'
+    save_changes: 'Salveaza modificarile' # Save Changes
+  cancel: 'Anuleaza' # Cancel
+  change: 'Modifica' # Change
+  close: 'Inchide' # Close
+  content: 'Continut' # Content
   content_type: 'Content&#8209;Type'    
   creating_status: 'Creating {{model}}&#8230;'
   date:
-    abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
-    abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
-    day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    abbr_day_names: [D, L, Ma, Mi, J, V, S] # abbr_day_names
+    abbr_month_names: [~, Ian, Feb, Mar, Apr, Mai, Iunie, Iulie, Aug, Sept, Oct, Noem, Dec] # abbr_month_names
+    day_names: [duminica, luni, marti, miercuri, joi, vineri, sambata] # day_names
     formats:
       default: "%Y-%m-%d"
       long: "%B %e, %Y"
       only_day: "%e"
       short: "%e %b"
-    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]   
+    month_names: [~, Ianuarie, Februarie, Martie, Aprilie, Mai, Iunie, Iulie, August, Septembrie, Octombrie, Noiembrie, Decembrie] # month_names
     order: [ :year, :month, :day ]
   delete_layout: 'Delete Layout'
-  delete_pages: 'Delete {{pages}}'  
+  delete_pages: 'Delete {{pages}}'
   delete_snippet: 'Delete Snippet'
   delete_user: 'Delete User'
-  description: 'Description'
+  description: 'Descriere' # Description
   design: 'Design'
   designer: 'Designer'
-  draft: 'Draft'
+  draft: 'Ciorna' # Draft
   edit_layout: 'Edit Layout'
   edit_page:  'Edit Page'   
   edit_snippet: 'Edit Snippet'
   edit_user: 'Edit User'
-  email_address: 'E-mail Address'
-  extension: 'Extension'
-  extensions: 'Extensions'
-  filter: 'Filter'
-  hidden: 'Hidden'
-  hide: 'Hide' 
-  keywords: 'Keywords'
-  language: 'Language'
+  email_address: 'Adresa de E-mail' # E-mail Address
+  extension: 'Extensie' # Extension
+  extensions: 'Extensii' # Extensions
+  filter: 'Filtru' # Filter
+  hidden: 'Ascuns' # Hidden
+  hide: 'Ascunde'  # Hide
+  keywords: 'Cuvinte cheie' # Keywords
+  language: 'Limba' # Language
   layout: 'Layout'
   layouts: 'Layouts'
   log_out: 'Logout'
   logged_in_as: 'Logged in as'
   login: 'Login'
-  modify: 'Modify' 
+  modify: 'Modify'
   more: 'More'
   name: 'Name'
   new_homepage: 'New Homepage'
   new_layout: 'New Layout'    
-  new_page: 'New Page'
-  new_password: 'New Password'
+  new_page: 'Pagina noua' # New Page
+  new_password: 'Parola nouw' # New Password
   new_snippet: 'New Snippet'
-  new_user: 'New User'  
+  new_user: 'Utilizator nou' # New User
   no_layouts: 'No Layouts'
   no_pages: 'No Pages'
   no_snippets: 'No Snippets'
-  notes: 'Notes'    
+  notes: 'Notes'
   optional: 'Optional'
-  or: 'or'
-  page: 'Page'
+  or: 'sau' # or
+  page: 'Pagina' # Page
   page_page: 'Page Part'
   page_title: 'Page Title'  
   page_type: 'Page Type'
-  pages: 'Pages'
+  pages: 'Pagini' # Pages
   pages_controller:
-    removed_many: "The pages were successfully removed from the site."   
-    removed_one: "The page was successfully removed from the site."  
-    saved: "Your page has been saved below."  
-  password: 'Password' 
-  password_confirmation: 'Confirm New Password'
+    removed_many: "Paginile au fost sterse cu succes." # The pages were successfully removed from the site.
+    removed_one: "Pagina a fost stearsa cu success." # The page was successfully removed from the site.
+    saved: "Your page has been saved below." 
+  password: 'Parola' # Password
+  password_confirmation: 'Confirma noua parola' # Confirm New Password
   personal: 'Personal'
   personal_preferences: 'Personal Preferences'
   please_login: 'Please Login'
